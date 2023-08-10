@@ -37,10 +37,7 @@ namespace Birthday_Calculator
             // Display various age information
             Console.WriteLine("\r\nYou're " + Math.Floor(age.Days / 365.2425) + " years old");
             Console.WriteLine("You're " + age.Days + " days old");
-            Console.WriteLine("You're " + age.Days * 24 + " hours old");
-            Console.WriteLine("You're " + age.Days * 1440 + " minutes old");
-            Console.WriteLine("You're " + age.Days * 86400 + " seconds old");
-
+ 
             // Wait for user input before exiting
             Console.ReadLine();
         }
