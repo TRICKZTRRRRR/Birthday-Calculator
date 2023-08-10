@@ -10,6 +10,7 @@ namespace Birthday_Calculator
     {
         static void Main(string[] args)
         {
+
             // Get the current date and time
             DateTime today = DateTime.Now;
 
@@ -34,10 +35,13 @@ namespace Birthday_Calculator
             // Calculate the time span between birthdate and today
             TimeSpan age = today - birthday;
 
-            // Display various age information
-            Console.WriteLine("\r\nYou're " + Math.Floor(age.Days / 365.2425) + " years old");
-            Console.WriteLine("You're " + age.Days + " days old");
- 
+            // Calculate the age in years and days
+            int yearsOld = age.Days / 365;
+            int daysOld = age.Days % 365;
+
+            // Display the age information in years and days
+            Console.WriteLine($"\r\nYou're {yearsOld} years and {daysOld} days old");
+
             // Wait for user input before exiting
             Console.ReadLine();
         }
