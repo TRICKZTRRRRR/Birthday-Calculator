@@ -35,7 +35,7 @@ namespace Birthday_Calculator
             TimeSpan age = today - birthday;
 
             // Display various age information
-            Console.WriteLine("\r\nYou're " + age.Days / 365 + " years old");
+            Console.WriteLine("\r\nYou're " + Math.Floor(age.Days / 365.2425) + " years old");
             Console.WriteLine("You're " + age.Days + " days old");
             Console.WriteLine("You're " + age.Days * 24 + " hours old");
             Console.WriteLine("You're " + age.Days * 1440 + " minutes old");
